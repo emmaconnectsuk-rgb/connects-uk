@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connects UK | Retail Payments</title>
+    <style>
+        /* NEO-BRUTALISM STYLE - BOLD & FUNCTIONAL */
+        :root {
+            --black: #111111;
+            --white: #ffffff;
+            --gray: #f4f4f4;
+            --green: #008751;
+            --yellow: #f5d300; /* New Accent for Contact */
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: var(--black);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Bold Header */
+        header {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-bottom: 4px solid var(--black);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            line-height: 0.9;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #555;
+            font-weight: 400;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        /* The Product Cards */
+        .card {
+            background: var(--gray);
+            padding: 40px;
+            border: 2px solid var(--black);
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 8px 8px 0px var(--black); /* Hard shadow */
+        }
+
+        h3 { font-size: 2rem; margin-top: 0; margin-bottom: 10px; }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--black);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        li::before {
+            content: "✓";
+            margin-right: 10px;
+            color: var(--green);
+            font-weight: bold;
+        }
+
+        /* The 'View Offer' Button */
+        .btn {
+            background-color: var(--black);
+            color: var(--white);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            display: block;
+            text-decoration: none; /* Removes underline */
+            text-align: center;
+            box-sizing: border-box; /* Keeps padding inside width */
+        }
+
+        .btn:hover {
+            background-color: var(--green);
+        }
+
+        /* NEW: Contact Section */
+        .contact-box {
+            margin-top: 80px;
+            background-color: var(--yellow); /* Attention grabbing */
+            padding: 40px;
+            border: 4px solid var(--black);
+            text-align: center;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--white);
+            color: var(--black);
+            padding: 15px 40px;
+            border: 2px solid var(--black);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            box-shadow: 4px 4px 0px var(--black);
+        }
+
+        .contact-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+        }
+
+        footer {
+            margin-top: 100px;
+            border-top: 1px solid #ddd;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Connects UK.</h1>
+        <div class="subtitle">The honest comparison site for London's retailers.</div>
+    </header>
+
+    <main>
+        
+        <p style="font-size: 1.2rem; margin-bottom: 40px; max-width: 600px;">
+            Stop losing money on transaction fees. We track the latest rates so you can focus on running your shop.
+        </p>
+
+        <div class="grid">
+            
+            <div class="card">
+                <h3>Square</h3>
+                <span class="price">1.75% per txn</span>
+                <ul>
+                    <li>No monthly fees</li>
+                    <li>Money next business day</li>
+                    <li>Best for: Pop-ups</li>
+                </ul>
+                <a href="https://squareup.com/gb" target="_blank" class="btn">View Offer &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>SumUp</h3>
+                <span class="price">1.69% per txn</span>
+                <ul>
+                    <li>Cheapest hardware</li>
+                    <li>Pocket sized</li>
+                    <li>Best for: Mobile</li>
+                </ul>
+                <a href="https://www.sumup.com/en-gb/" target="_blank" class="btn">View Offer &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>Zettle</h3>
+                <span class="price">1.75% per txn</span>
+                <ul>
+                    <li>Owned by PayPal</li>
+                    <li>Fastest transaction speed</li>
+                    <li>Best for: Cafes</li>
+                </ul>
+                <a href="https://www.zettle.com/gb" target="_blank" class="btn">View Offer &rarr;</a>
+            </div>
+
+        </div>
+
+        <div class="contact-box">
+            <h2 style="font-size: 2.5rem; margin: 0;">Unsure which one to pick?</h2>
+            <p style="font-size: 1.2rem; margin-top: 10px;">We offer free advice to help you find the lowest rates.</p>
+            
+            <a href="mailto:emma.connectsuk@gmail.com" class="contact-btn">Email Connects UK</a>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Connects UK. Independent Reviews.
+    </footer>
+
+</body>
+</html>
